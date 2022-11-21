@@ -53,7 +53,7 @@ def get_book(id):
     return {"name": book.name, "author": book.author, "publisher": book.publisher}
 
 
-#These wwere in the video so I just added them becouse why not
+#These wwere in the video so I just added them because why not
 @app.route('/books', methods=['POST'])
 def add_book():
     book = Book(name=request.json['name'],
